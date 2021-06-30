@@ -1,2 +1,2 @@
 # cote
-Practice algorithms for coding test everyday
+Practice algorithms everyday for coding tests
