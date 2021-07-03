@@ -55,7 +55,7 @@ def maxArea_2(height):
     return ans
 
 def maxArea_3(height):
-    'use two pointer and dynamic programming'
+    'set standard first and go better'
     left, right = 0, len(height)-1
     ans = 0
     while left < right:
