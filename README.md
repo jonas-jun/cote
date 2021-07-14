@@ -9,3 +9,5 @@ leet means leetcode
   - leet11. water container: start each end side
   - leet15. when sum, sorting is useful. if less than target, go right, else go left
 2. palindrome, start middle
+3. Linked List with dummy(new root) node
+  - leet_24_SwapNodes_dummy.py
