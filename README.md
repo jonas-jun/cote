@@ -11,3 +11,4 @@ leet means leetcode
 2. palindrome, start middle
 3. Linked List with dummy(new root) node
   - leet_24_SwapNodes_dummy.py
+  - leet_21_merge_LL.py
