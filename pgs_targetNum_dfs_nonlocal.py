@@ -38,6 +38,14 @@ def solution(numbers, target):
     helper(0, 0)
     return ans
 
+def sol_2(numbers, target):
+    if not numbers and target == 0:
+        return 1
+    elif not numbers:
+        return 0
+    else:
+        return solution(numbers[1:], target-numbers[0]) + solution(numbers[1:], target+numbers[0])
+
 # for test
 t1_nums = [1,1,1,1,1]
 t1_target = 3
