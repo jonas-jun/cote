@@ -2,7 +2,7 @@
 Practice algorithms everyday for coding tests
 ***
 bj, boj: BaekJoon  
-leet: leetcode
+leet: leetcode  
 pgs: Programmers
 ***
 **explain**  
