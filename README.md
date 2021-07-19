@@ -1,8 +1,9 @@
 # cote
 Practice algorithms everyday for coding tests
 ***
-bj means BaekJoon  
-leet means leetcode  
+bj, boj: BaekJoon  
+leet: leetcode
+pgs: Programmers
 ***
 **explain**  
 1. set standard first and go better
@@ -12,3 +13,6 @@ leet means leetcode
 3. Linked List with dummy(new root) node
   - leet_24_SwapNodes_dummy.py
   - leet_21_merge_LL.py
+4. BFS, DFS
+5. Binary Search
+6. Hash, Queue, Stack, Graph
