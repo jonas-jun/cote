@@ -5,6 +5,12 @@ A leaf is a node with no children.
 Input: root = [5,4,8,11,null,13,4,7,2,null,null,null,1], targetSum = 22
 Output: true
 
+PSEUDO
+basic DFS
+end comdition: leaf(not have any child)
+
+check point! -> do not affect temp_sum outside of definition (nonlocal!!)
+
 https://leetcode.com/problems/path-sum/
 '''
 
@@ -23,7 +29,7 @@ def hasPathSum(root, targetSum):
         togo = [node for node in [root.left, root.right] if node]
         for node in togo:
             #cur_sum = temp_sum
-            dfs_helper(node, temp_sum)
+            dfs_helper(node, temp_sum) # checkpoint!!!
     dfs_helper(root, 0)
     return ans
 
