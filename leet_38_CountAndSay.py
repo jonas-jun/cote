@@ -42,6 +42,31 @@ class Solution:
             i += 1
         return self.visited[n]
 
+class Solution2:
+    def __init__(self):
+        self.visited = dict()
+        self.visited[1] = '1'
+    
+    def countAndSay(self, n: int) -> str:  
+        if n in self.visited: return self.visited[n]
+        num_str = self.countAndSay(n-1)
+        num_str += '0'
+        ans = str()
+        i = 1
+        temp = 1
+        while i < len(num_str):
+            if num_str[i] != num_str[i-1]:
+                ans += (str(temp)+num_str[i-1]) # 111221
+                temp = 1
+            else:
+                temp += 1
+            i += 1
+        self.visited[n] = ans
+        return ans
+
+
 # for test
 sol = Solution()
-print(sol.countAndSay(4))
+print(sol.countAndSay(10))
+sol2 = Solution2()
+print(sol2.countAndSay(10))
