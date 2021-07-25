@@ -91,9 +91,9 @@ def sol_2(isWater):
             if isWater[row][col] == 1:
                 deq.append([row, col])
                 newiswater[row][col] = 0
-    # 다 None에 (0,2) (1,0)만 0
+
     while deq:
-        row, col = deq.popleft() # (0,2)
+        row, col = deq.popleft()
         for new_row, new_col in [(row+1, col), (row-1, col), (row, col-1), (row, col+1)]:
             if 0 <= new_row < r and 0 <= new_col < c and newiswater[new_row][new_col] is None: # ()
                 newiswater[new_row][new_col] = newiswater[row][col] + 1
