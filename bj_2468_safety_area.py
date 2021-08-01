@@ -58,7 +58,7 @@ map1 = list()
 n = int(input())
 for _ in range(n):
     map1.append(list(map(int, sys.stdin.readline().split())))
-print(map1)
+
 print(sol(map1, n))
 
 # for insert mode
