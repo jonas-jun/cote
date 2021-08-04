@@ -13,6 +13,18 @@
 5
 67863915
 
+PSEUDO
+세로 N, 가로 M일 때의 값을 표시할 수 있는 dp list 생성, dp[i][j]가 왼쪽 i개 오른쪽 j개의 사이트가 있을 때의 답
+i==j 일때 dp[i][j] = 1
+i==1 일때 dp[i][j] = j
+
+def get_val(i,j):
+    dp[i][j]가 있으면 바로 return
+    
+    ans = get_val(i,j-1) * (j / (i-j))
+    dp[i][j] = ans
+    return ans
+
 https://www.acmicpc.net/problem/1010
 '''
 
