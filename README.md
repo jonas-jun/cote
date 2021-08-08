@@ -18,4 +18,4 @@ pgs: Programmers
   - leet22, leet112, **leet130, leet1765(multi-source BFS!)**
   - **pgsKAKAO2021_SocialDistance**, pgs_network, pgs_targetNum
 6. Binary Search
-7. Hash, Queue, Stack, Graph
+7. Data Strucrues: Hash, Queue, Stack, Graph, Heapq
