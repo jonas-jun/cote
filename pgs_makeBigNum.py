@@ -7,7 +7,6 @@ number	k	return
 
 PSEUDO
 sol1
-recursion 사용
 def helper():
     number 길이가 1이면 (k는 남아있다는 것이므로)
     k-=1, number = str() 처리
@@ -15,11 +14,8 @@ def helper():
     앞에서부터 k+1개의 숫자에서 가장 큰 숫자를 기준으로 앞쪽 숫자들은 떼어냄
     k - (떼어낸 숫자의 개수)
     ans에 max숫자를 넣어주고, number는 그 뒤쪽부분으로 자름 number = number[idx+1:]
-
 while k:
     helper()
-
-
 sol2
 stack을 쓴다.
 감소하는 구간에서는 그냥 stack.append
