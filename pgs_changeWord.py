@@ -44,7 +44,7 @@ def sol1(begin, target, words):
         cur = queue.popleft()
         togo = list()
         for w in cur:
-            togo += graph[w] # 다음 레벨의 to리o들을 list에 모으고
+            togo += graph[w] # 다음 레벨의 todo들을 list에 모으고
         togo = list(set(togo))
         temp_level = [w for w in togo if w not in visited] # 실제 valid하게 갈 곳들만 남김
         for loc in temp_level:
