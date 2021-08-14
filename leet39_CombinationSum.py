@@ -1,6 +1,18 @@
 '''
+Unique한 숫자로 이뤄진 candidates에서 샘플링 with replacement를 해서 target을 만들 수 있는 모든 경우를 리턴
 
+Input: candidates = [2,3,6,7], target = 7
+Output: [[2,2,3],[7]]
 
+PSEUDO
+각 candidates의 숫자들이 등장할 수 있는 개수 중 있는 가장 큰 값을 구하고
+그 범위 안에서 모든 경우들을 탐색한다.
+solution 1
+범위를 max_n 이하의 수로 구하는데, max_n은 candidates 중 가장 작은 숫자가 가질 수 있는 최대 개수로 정했다. 시간이 매우 오래 걸림
+solution 2
+각 candidates 숫자 마다 가질 수 있는 최대 값들을 별도로 정의해준 후 DFS를 돌려 가면서 탐색했다 + 백트래킹으로 target을 우선 넘어갈 경우 탐색을 종료했다.
+
+https://leetcode.com/problems/combination-sum
 '''
 
 from typing import List
@@ -25,14 +37,7 @@ def sol1(candidates: List[int], target: int):
     return ans
 
 def sol2(candidates, target):
-    '''
-    각 자리수마다 최대치로 들어갈 수 있는 숫자를 구해서 ('//' 연산) range(n+1)
-    graph를 만든다. (DFS를 돌아야 함)
-    각각 path에 append 해주고
-    끝자리에 오면 path와 candidates로 합을 확인해서 target과 일치한다면 path를 answer에 append    
-    
-    [2,3,6,7] 7
-    '''
+
     ans = list()
     candidates.sort(reverse=True) # 장치 1
     max_n = [target//i for i in candidates]
@@ -46,16 +51,13 @@ def sol2(candidates, target):
 
     def dfs_helper(path, idx, val):
         nonlocal candidates, max_n, ans, target
-        
         trans = transform(path)
         sum_trans = sum(trans)
         if sum_trans > target: return # 장치 2
-        
         path.append(val)
         sum_trans += (candidates[idx]*val) # 장치 3
         trans += [candidates[idx]] * val
         if len(path) == len(candidates):
-            #print('last func', path)
             if sum_trans == target:
                 ans.append(trans)
             return
@@ -76,7 +78,7 @@ t2 = [2,3,6,7]
 t2_target = 7
 
 print('case 1')
-#print(check(sol1, t1, t1_target))
+#print(check(sol1, t1, t1_target)) # don't run... needs very very long time
 print(check(sol2, t2, t2_target))
 
 print('case 2')
