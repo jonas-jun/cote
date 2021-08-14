@@ -21,4 +21,4 @@ pgs: Programmers
   - bj_10844(2dim, memoization)
 5. palindrome, start middle
 6. Binary Search
-7. Data Strucrues: Hash, Queue, Stack, Graph, Heapq
+7. Data Structures: Hash, Queue, Stack, Graph, Heapq
