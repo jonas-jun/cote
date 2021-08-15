@@ -1,3 +1,11 @@
+'''
+1은 집이 있는 곳을, 0은 집이 없는 곳을 나타낸다.
+철수는 이 지도를 가지고 연결된 집의 모임인 단지를 정의하고, 단지에 번호를 붙이려 한다.
+지도를 입력하여 단지수를 출력하고, 각 단지에 속하는 집의 수를 오름차순으로 정렬하여 출력하는 프로그램을 작성
+
+https://www.acmicpc.net/problem/2667
+'''
+
 def solution(n, map1):
     visited = [[False for _ in range(n)] for _ in range(n)]
     cum = 0
