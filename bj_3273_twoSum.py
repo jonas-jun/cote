@@ -1,10 +1,8 @@
 '''
 distinct한 수들로 이뤄진 배열과 target: int이 주어질 때 배열 내에서 두 수를 골라 합이 target이 되는 쌍의 개수
 5 12 7 10 9 1 2 3 11,  13 이면 답은 3
-
 Sol1: 정렬 후 two pointer (기본)
 Sol2: loop을 돌면서 타겟에서 숫자를 뺀 나머지를 set에 넣어준다. 만약 우선 그 숫자가 set에 있는지 확인해서 있으면 ans += 1, 없으면 set에 넣어주기
-
 https://www.acmicpc.net/problem/3273
 '''
 
