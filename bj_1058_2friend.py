@@ -1,7 +1,12 @@
 '''
-BFS를 통해 2칸 떨어진 사람의 수 구하기
+2-친구의 수가 가장 많은 사람의 2-친구의 수 (직접 친구거나, 공통의 친구가 한명 이상 존재하거나)
 
+Sol
+BFS를 통해 2칸 이내로 떨어진 사람의 수 구하기
+
+https://www.acmicpc.net/problem/1058
 '''
+
 from collections import deque, defaultdict
 def solution(graph):
     
@@ -24,15 +29,15 @@ def solution(graph):
         print(node, ans)                
     return ans
 
-import sys
-graph = defaultdict(lambda: list())
-input = sys.stdin.readline
-for i in range(int(input())):
-    line = list(input().rstrip())
-    for j in range(len(line)):
-        if line[j] == 'Y':
-            graph[i+1].append(j+1)
-print(solution(graph))
+# import sys
+# graph = defaultdict(lambda: list())
+# input = sys.stdin.readline
+# for i in range(int(input())):
+#     line = list(input().rstrip())
+#     for j in range(len(line)):
+#         if line[j] == 'Y':
+#             graph[i+1].append(j+1)
+# print(solution(graph))
 
 
 from collections import defaultdict
@@ -47,5 +52,5 @@ graph2 = defaultdict(lambda: list())
 graph2[1] = [2,3]
 graph2[2] = [1,3]
 graph2[3] = [1,2]
-#print(solution(graph))
+print(solution(graph))
 #print(solution(graph2))
