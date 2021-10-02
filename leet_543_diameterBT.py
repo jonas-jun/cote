@@ -5,9 +5,11 @@ solution
 check함수: subroot 기준으로 왼쪽과 오른쪽 가장 긴 leaf까지의 거리를 찾아주고 (BFS, cnt) -> max_left+max_right
 helper함수: 모든 node를 정점으로 check를 돌려줌 (recursive)
 
+solution2를 한번 읽어보기!
+solution1을 전체 recursive하게 짠 코드
+
 https://leetcode.com/problems/diameter-of-binary-tree/submissions/
 '''
-
 
 from Project4.BST_Helper import create_linked_bst
 from collections import deque
