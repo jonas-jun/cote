@@ -19,6 +19,7 @@ pgs: Programmers
   - Shortest path LEVEL(BFS): pgs_changeNumber
 4. Dynamic Programing
   - bj_10844(2dim, memoization)
-5. palindrome, start middle
-6. Binary Search
-7. Data Structures: Hash, Queue, Stack, Graph, Heapq
+5. Binary Tree
+6. palindrome, start middle
+7. Binary Search
+8. Data Structures: Hash, Queue, Stack, Graph, Heapq
