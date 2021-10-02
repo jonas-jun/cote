@@ -20,6 +20,9 @@ pgs: Programmers
 4. Dynamic Programing
   - bj_10844(2dim, memoization)
 5. Binary Tree
+  - Traversal: leet_94(pre, post, in), leet_102(level-order, defaultdict)
+  - Depth: leet_111(min, max depth)
+  - Recover: leet_99(value change)
 6. palindrome, start middle
 7. Binary Search
 8. Data Structures: Hash, Queue, Stack, Graph, Heapq
