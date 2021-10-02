@@ -38,9 +38,10 @@ def canFinish(numCourses: int, prerequisites: List[List[int]]) -> bool:
     
     for node in graph:
         dfs_helper(node)
+        if iscycle: return False
     
-    return True if not iscycle else False
-
+    return True
+    
 t1 = 2
 t1_edges = [[1,0]]
 t2 = 2
