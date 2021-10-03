@@ -23,6 +23,8 @@ pgs: Programmers
   - Traversal: leet_94(pre, post, in), leet_102(level-order, defaultdict)
   - Depth: leet_111(min, max depth)
   - Recover: leet_99(value change)
+  - Diameter(longest path): leet_543
+  - Subtree check: leet_572 (recursive)
 6. palindrome, start middle
 7. Binary Search
 8. Data Structures: Hash, Queue, Stack, Graph, Heapq
