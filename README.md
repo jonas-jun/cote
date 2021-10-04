@@ -28,6 +28,7 @@ pgs: Programmers
   - Subtree check: leet_572 (recursive)
   - Path to leaf: leet_257
   - Check same tree: leet_100
+  - Longest univalue: leet_687 (모든 node를 기준으로 체크해봐야할 때)
 6. palindrome, start middle
 7. Binary Search
 8. Data Structures: Hash, Queue, Stack, Graph, Heapq
