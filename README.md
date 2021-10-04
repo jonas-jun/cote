@@ -26,6 +26,7 @@ pgs: Programmers
   - Diameter(longest path): leet_543
   - Subtree check: leet_572 (recursive)
   - Path to leaf: leet_257
+  - Check same tree: leet_100
 6. palindrome, start middle
 7. Binary Search
 8. Data Structures: Hash, Queue, Stack, Graph, Heapq
