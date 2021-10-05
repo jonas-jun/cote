@@ -18,6 +18,7 @@ pgs: Programmers
   - leet22, leet112, **leet130, leet1765(multi-source BFS!)**
   - **pgsKAKAO2021_SocialDistance**, pgs_network, pgs_targetNum
   - Shortest path LEVEL(BFS): pgs_changeNumber
+  - CourseSchedule: leet_207, leet_210 (210이 합리적인 방법!)
 4. Dynamic Programing
   - bj_10844(2dim, memoization)
 5. Binary Tree
